@@ -1,7 +1,7 @@
 public class NotFoundException extends RuntimeException {
 
     public NotFoundException(int id) {
-        super("Element with id: " + id + " not found");
+        super("Элемент  id: " + id + " не найден");
     }
 
 }

@@ -1,5 +1,6 @@
 public class ShopRepository {
     private Product[] products = new Product[0];
+    private int id;
 
     /**
      * Вспомогательный метод для имитации добавления элемента в массив
@@ -25,6 +26,25 @@ public class ShopRepository {
      */
     public void add(Product product) {
         products = addToArray(products, product);
+
+   // }
+
+//Проверка на совпадение id
+   /*     Product addProduct = findById(id);
+
+        if (addProduct == null) {
+            throw new AlreadyExistsException(id);
+        }
+
+        Product[] tmp = new Product[products.length + 1];
+        int copyToIndex = 0;
+        for (Product product : products) {
+            if (product.getId() != id) {
+                tmp[copyToIndex] = product;
+                copyToIndex++;
+            }
+        }
+        products = tmp;*/
     }
 
     public Product[] findAll() {
