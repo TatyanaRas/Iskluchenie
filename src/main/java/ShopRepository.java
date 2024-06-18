@@ -1,6 +1,6 @@
 public class ShopRepository {
     private Product[] products = new Product[0];
-    private int id;
+  //  private int id;
 
     /**
      * Вспомогательный метод для имитации добавления элемента в массив
@@ -74,7 +74,7 @@ public class ShopRepository {
     private Product findById(int id) {
 
         for (Product product : products) {
-            if (product.getId == id) {
+            if (product.getId() == id) {
 
                 return product;
             }

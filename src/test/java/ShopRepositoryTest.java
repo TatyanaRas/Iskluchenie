@@ -16,15 +16,15 @@ public class ShopRepositoryTest {
         repo.add(product1);
         repo.add(product2);
         repo.add(product3);
-       // repo.remove(1);
+        repo.remove(10);
 
-    //    Product[] actual = repo.findAll();
-   //     Product[] expected = {product2, product3};
+        Product[] actual = repo.findAll();
+       Product[] expected = {product1, product3};
 
-   //     Assertions.assertArrayEquals(expected, actual);
-         Assertions.assertThrows(NotFoundException.class, () -> {
+        Assertions.assertArrayEquals(expected, actual);
+     /*  Assertions.assertThrows(NotFoundException.class, () -> {
                  repo.remove(1);
-           });
+           });*/
 
     }
 
