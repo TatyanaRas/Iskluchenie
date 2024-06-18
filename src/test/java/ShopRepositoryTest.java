@@ -19,7 +19,7 @@ public class ShopRepositoryTest {
         repo.remove(10);
 
         Product[] actual = repo.findAll();
-       Product[] expected = {product1, product3};
+        Product[] expected = {product1, product3};
 
         Assertions.assertArrayEquals(expected, actual);
      /*  Assertions.assertThrows(NotFoundException.class, () -> {

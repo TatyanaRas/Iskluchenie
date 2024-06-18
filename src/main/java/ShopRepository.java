@@ -1,6 +1,6 @@
 public class ShopRepository {
     private Product[] products = new Product[0];
-  //  private int id;
+    //  private int id;
 
     /**
      * Вспомогательный метод для имитации добавления элемента в массив
@@ -27,7 +27,7 @@ public class ShopRepository {
     public void add(Product product) {
         products = addToArray(products, product);
 
-   // }
+        // }
 
 //Проверка на совпадение id
    /*     Product addProduct = findById(id);
